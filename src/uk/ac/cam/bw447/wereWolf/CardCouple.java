@@ -17,7 +17,7 @@ public class CardCouple implements Card{
 
     @Override
     public String getName() {
-        return String.format("\t%s\t\t%s %n",this.firstCard.getName(),this.secondCard.getName());
+        return String.format("\t%s\t\t%s",this.firstCard.getName(),this.secondCard.getName());
     }
 
     public boolean isBothWolfAndPolice(){

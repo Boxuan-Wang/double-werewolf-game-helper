@@ -32,10 +32,10 @@ public class ArrangementForSixPlayers implements Arrangement{
     public String toString() {
         List<String> listOfName = arrangement.stream().map(CardCouple::getName).collect(Collectors.toList());
         List<String> listOfIndexedName = new LinkedList<>();
-        listOfIndexedName.add("\t\t\t第一身份\t\t第二身份\n");
+        //listOfIndexedName.add("\t\t\t第一身份\t\t第二身份\n");
         for (int i=0;i<listOfName.size();i++){
-            listOfIndexedName.add(String.format("%d号玩家： %s", i+1, listOfName.get(i)));
+            listOfIndexedName.add(String.format("%d号： %s", i+1, listOfName.get(i)));
         }
-        return String.join("",listOfIndexedName);
+        return String.join("\n",listOfIndexedName);
     }
 }
