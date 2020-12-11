@@ -48,12 +48,6 @@ class helperApp extends JFrame{
         }
         LabelPanel.setVisible(true);
 
-
-//        startLabel = new JLabel("Ready?",JLabel.CENTER);
-//        startLabel.setFont(new Font(startLabel.getFont().getFontName(),Font.PLAIN,10));
-//        startLabel.setForeground(Color.BLACK);
-//        this.add(startLabel,BorderLayout.CENTER);
-
          // label to give a welcome
         arrangementLabels[gameSize/2].setText("Ready?");
         arrangementLabels[gameSize/2].setVisible(true);
